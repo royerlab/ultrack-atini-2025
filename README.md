@@ -8,7 +8,7 @@ Clone this repository to your local machine to folow the tutorial by running:
 git clone https://github.com/royerlab/ultrack-i2k2024
 ```
 
-You can refer the [workshop website](https://ultrack.github.io/i2k-2024-workshop/) for more information.
+You can refer the [workshop website](https://royerlab.github.io/ultrack-i2k2024/) for more information.
 
 ## Installation
 
