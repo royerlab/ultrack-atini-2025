@@ -102,10 +102,11 @@ repository](https://github.com/royerlab/ultrack-atini-2025) and move into the do
 2. We use an environment to encapsulate the Python tools used for this workshop.
    This ensures that the requirements for this workshop do not interfere with
    your other Python projects. To create the environment with tutorial's dependencies
-   (Python 3.12, ultrack, napari and other) in it, enter the following command:
+   (Python 3.11, ultrack, napari and other) in it, enter the following command:
 
     ```bash
-    conda env create --file environment.yml
+    conda create -n ultrack-atini python=3.11
+    pip install -r requirements.txt
     ```
 
 3. Once the environment setup has finished, activate the environment:
