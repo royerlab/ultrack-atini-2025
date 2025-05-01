@@ -1,4 +1,4 @@
-# Ultrack Ultrack Advanced Techniques in Neuroimaging 2025 Tutorial
+# Ultrack Advanced Techniques in Neuroimaging 2025 Tutorial
 
 This is ATiNI tutorial on Ultrack, a Python package for large-scale cell tracking under segmentation uncertainty.
 
