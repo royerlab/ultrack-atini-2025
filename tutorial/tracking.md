@@ -336,7 +336,7 @@ for gamma in gammas:
     )
     all_labels.append(cellpose_labels)
     
-    name = f"{dataset}_labels_{str(gamma).replace(".", '_')}"
+    name = f"{dataset}_labels_{str(gamma).replace('.', '_')}"
     viewer.add_labels(cellpose_labels, name=name, visible=False)
 
     # cell tracking using `labels` parameter, it's the same as using `labels_to_edges`.
@@ -432,7 +432,7 @@ tracks_df.to_csv(f"{dataset}_tracks.csv", index=False)
 
 segments = tracker.to_zarr(
     overwrite=True,
-)
+).astype(np.uint16)
 
 viewer.add_tracks(
     tracks_df[["track_id", "t", "y", "x"]],
