@@ -5,7 +5,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.13
-    jupytext_version: 1.16.4
+    jupytext_version: 1.17.1
 kernelspec:
   display_name: Python 3 (ipykernel)
   language: python
@@ -246,7 +246,7 @@ cellpose = Cellpose(model_type="cyto2", gpu=True)
 
 def predict(frame: ArrayLike, gamma: float) -> ArrayLike:
     norm_frame = normalize(np.asarray(frame), gamma=gamma)
-    return cellpose(norm_frame, tile=False, normalize=False, diameter=75.0)
+    return cellpose(norm_frame, normalize=False, diameter=75.0)
 ```
 
 With the `predict` function defined, we apply it to all frames.
@@ -254,7 +254,7 @@ With the `predict` function defined, we apply it to all frames.
 ```{code-cell} ipython3
 gamma = 1.0
 
-cellpose_labels = np.zeros_like(image, dtype=np.int32)
+cellpose_labels = np.zeros_like(image, dtype=np.int16)
 array_apply(
     image,
     out_array=cellpose_labels,
@@ -336,7 +336,7 @@ for gamma in gammas:
     )
     all_labels.append(cellpose_labels)
     
-    name = f"{dataset}_labels_{str(gamma).replace(".", '_')}"
+    name = f"{dataset}_labels_{str(gamma).replace('.', '_')}"
     viewer.add_labels(cellpose_labels, name=name, visible=False)
 
     # cell tracking using `labels` parameter, it's the same as using `labels_to_edges`.
@@ -432,7 +432,7 @@ tracks_df.to_csv(f"{dataset}_tracks.csv", index=False)
 
 segments = tracker.to_zarr(
     overwrite=True,
-)
+).astype(np.int16)
 
 viewer.add_tracks(
     tracks_df[["track_id", "t", "y", "x"]],
