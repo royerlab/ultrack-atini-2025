@@ -2,7 +2,7 @@ jupyter-book
 jupyterlab
 jupytext
 numpy<2
-napari[pyside2]
+napari[all]
 napari-animation
 matplotlib
 py-ctcmetrics
