@@ -246,7 +246,9 @@ cellpose = Cellpose(model_type="cyto2", gpu=True)
 
 def predict(frame: ArrayLike, gamma: float) -> ArrayLike:
     norm_frame = normalize(np.asarray(frame), gamma=gamma)
-    return cellpose(norm_frame, normalize=False, diameter=75.0)
+    labels = cellpose(norm_frame, normalize=False, diameter=75.0)
+    labels = labels.cpu().numpy()
+    return labels
 ```
 
 With the `predict` function defined, we apply it to all frames.
