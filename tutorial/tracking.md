@@ -327,7 +327,7 @@ metrics = []
 for gamma in gammas:
 
     # Cellpose prediction
-    cellpose_labels = np.zeros_like(image, dtype=np.int32)
+    cellpose_labels = np.zeros_like(image, dtype=np.int16)
     array_apply(
         image,
         out_array=cellpose_labels,
@@ -377,7 +377,7 @@ foreground, contours = labels_to_contours(all_labels, sigma=sigma)
 ```
 
 ```{code-cell} ipython3
-layer = viewer.add_labels(foreground.astype(int))
+layer = viewer.add_labels(foreground.astype(np.int16))
 screenshot()
 layer.visible = False
 ```
