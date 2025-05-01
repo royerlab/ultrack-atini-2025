@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: ultrack 2024 i2k tutorial
+title: ultrack 2025 ATiNI tutorial
 author: Jordao Bragantini
 logo: logo.png
 
@@ -32,7 +32,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/royerlab/ultrack-i2k2024 # Online location of your book
+  url: https://github.com/royerlab/ultrack-atini-2025 # Online location of your book
   branch: main  # Which branch of the repository should be used when creating links (optional)
   path_to_book: "tutorial"  # A path to your book's folder, relative to the repository root.
 

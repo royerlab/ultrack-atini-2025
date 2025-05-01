@@ -1,6 +1,6 @@
-# Ultrack I2K 2024 Tutorial
+# Ultrack Ultrack Advanced Techniques in Neuroimaging 2025 Tutorial
 
-This is the From Images to Knowledge [(I2K)](https://www.i2kconference.org/) tutorial on Ultrack, a Python package for large-scale cell tracking under segmentation uncertainty.
+This is ATiNI tutorial on Ultrack, a Python package for large-scale cell tracking under segmentation uncertainty.
 
 <div style="padding:56.25% 0 0 0;position:relative;">
     <iframe 
@@ -43,7 +43,7 @@ The instructors for this workshop are:
 ## Pre-tutorial setup
 
 Because this is a short tutorial (30 minutes), please [download this
-repository](https://github.com/royerlab/ultrack-i2k2024) and [setup the programming environment](installation) before the tutorial starts.
+repository](https://github.com/royerlab/ultrack-atini-2025) and [setup the programming environment](installation) before the tutorial starts.
 
 ## References
 

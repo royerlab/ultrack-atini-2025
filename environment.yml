@@ -1,4 +1,4 @@
-name: ultrack-i2k2024
+name: ultrack-atini
 channels:
   - gurobi
   - pytorch

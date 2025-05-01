@@ -1,7 +1,7 @@
 # Environment setup
 
 ```{tip}
-If you have any issues with installation, please feel free to [open a github issue](https://github.com/royerlab/ultrack-i2k2024/issues/new) and
+If you have any issues with installation, please feel free to [open a github issue](https://github.com/royerlab/ultrack-atini-2025/issues/new) and
 we will try to help you get unstuck.
 ```
 
@@ -94,9 +94,9 @@ as well and you can skip to the bottom of this page to set up the conda environm
    - **Linux**: Open your terminal application
 
 1. Download the [workshop
-repository](https://github.com/royerlab/ultrack-i2k2024) and move into the downloaded folder by entering the following command:
+repository](https://github.com/royerlab/ultrack-atini-2025) and move into the downloaded folder by entering the following command:
    ```
-   cd ultrack-i2k2024
+   cd ultrack-atini-2025
    ```
 
 2. We use an environment to encapsulate the Python tools used for this workshop.
@@ -111,11 +111,11 @@ repository](https://github.com/royerlab/ultrack-i2k2024) and move into the downl
 3. Once the environment setup has finished, activate the environment:
 
     ```bash
-    conda activate ultrack-i2k2024
+    conda activate ultrack-atini
     ```
 
     If you successfully activated the environment, you should now see
-   `(ultrack-i2k2024)` to the left of your command prompt.
+   `(ultrack-atini)` to the left of your command prompt.
 
 4. Test that your notebook installation is working. We will be using notebooks
    for interactive analysis. Enter the command below and it should launch the
