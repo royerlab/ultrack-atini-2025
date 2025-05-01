@@ -1,4 +1,4 @@
-# Ultrack Ultrack Advanced Techniques in Neuroimaging 2025 Tutorial
+# Ultrack Advanced Techniques in Neuroimaging 2025 Tutorial
 
 This is ATiNI tutorial on Ultrack, a Python package for large-scale cell tracking under segmentation uncertainty.
 
@@ -17,7 +17,7 @@ This is ATiNI tutorial on Ultrack, a Python package for large-scale cell trackin
     <figcaption>Ultrack's visual summary.</figcaption>
 </figure>
 
-The tutorial will be held on Friday, October 25, 2024, from 12:00 to 13:30, see details [here](https://events.humantechnopole.it/event/1/contributions/45/).
+The tutorial will be held on Friday, May 2nd, 2025, from 10:30 to 12:00 at the Stanford University.
 
 See left sidebar for the tutorial content.
 
