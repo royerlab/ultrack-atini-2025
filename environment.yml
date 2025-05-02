@@ -1,12 +1,10 @@
 name: ultrack-atini
 channels:
   - gurobi
-  - pytorch
   - conda-forge
   - defaults
 dependencies:
   - python
-  - pytorch
   - jupyterlab
   - jupytext
   - jupyterlab-myst
@@ -20,7 +18,9 @@ dependencies:
   - nodejs
   - pip
   - higra
+  - numpy<2
   - pip:
+    - pytorch
     - py-ctcmetrics
     - napari[all]
     - ultrack
