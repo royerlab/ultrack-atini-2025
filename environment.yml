@@ -20,7 +20,7 @@ dependencies:
   - higra
   - numpy<2
   - pip:
-    - pytorch
+    - torch
     - py-ctcmetrics
     - napari[all]
     - ultrack
