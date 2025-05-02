@@ -11,7 +11,7 @@ dependencies:
   - jupyter-book
   - notebook
   - postgresql
-  - cellpose
+  - cellpose<3
   - coin-or-cbc
   - gurobi
   - jupyter
